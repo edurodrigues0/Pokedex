@@ -1,0 +1,183 @@
+{
+  "pokemons": [{
+    "id": 1,
+    "num": "001",
+    "name": "Bulbasaur",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+    "height": 0.7,
+    "weight": 6.9,
+    "genders": ["Male", "Female"],
+    "category": "Seed",
+    "abilities": "Overgrow",
+    "type": ["Grass", "Poison"],
+    "weaknesses": ["Fire", "Psychic", "Flying", "Ice"],
+    "next_evolution": [{
+      "id": 2,
+      "num": "002",
+      "name": "Ivysaur",
+      "image":"https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+    }]
+  }, {
+    "id": 2,
+    "num": "002",
+    "name": "Ivysaur",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+    "height": 1.0,
+    "weight": 13.0,
+    "genders": ["Male", "Female"],
+    "category": "Seed",
+    "abilities": "Overgrow",
+    "type": ["Grass", "Poison"],
+    "weaknesses": ["Fire", "Psychic", "Flying", "Ice"],
+    "prev_evolution": [{
+      "id": 1,
+      "num": "001",
+      "name": "Bulbasaur",
+      "image":"https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    }],
+    "next_evolution": [{
+      "id": 3,
+      "num": "003",
+      "name": "Venosaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+    }]
+  }, {
+    "id": 3,
+    "num": "003",
+    "name": "Venusaur",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+    "height": 2.0,
+    "weight": 100.0,
+    "genders": ["Male", "Female"],
+    "category": "Seed",
+    "abilities": "Overgrow",
+    "type": ["Grass", "Poison"],
+    "weaknesses": ["Fire", "Psychic", "Flying", "Ice"],
+    "prev_evolution": [{
+      "id": 2,
+      "num": "002",
+      "name": "Ivysaur",
+      "image":"https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+    }]
+  },{
+    "id": 4,
+    "num": "004",
+    "name": "Charmander",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+    "height": 0.6,
+    "weight": 8.5,
+    "genders": ["Male", "Female"],
+    "category": "Lizard",
+    "abilities": "Blaze",
+    "type": ["Fire"],
+    "weaknesses": ["Water", "Ground", "Rock"],
+    "next_evolution": [{
+      "id": 5,
+      "num": "005",
+      "name": "Charmeleon",
+      "image":"https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+    }]
+  },{
+    "id": 5,
+    "num": "005",
+    "name": "Charmeleon",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+    "height": 1.1,
+    "weight": 19.0,
+    "genders": ["Male", "Female"],
+    "category": "Flame",
+    "abilities": "Blaze",
+    "type": ["Fire"],
+    "weaknesses": ["Water", "Ground", "Rock"],
+    "prev_evolution": [{
+      "id": 4,
+      "num": "004",
+      "name": "Charmander",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    }],
+    "next_evolution": [{
+      "id": 6,
+      "num": "006",
+      "name": "Charizard",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+    }]
+  }, {
+    "id": 6,
+    "num": "006",
+    "name": "Charizard",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    "height": 1.7,
+    "weight": 90.5,
+    "genders": ["Male", "Female"],
+    "category": "Flame",
+    "abilities": "Blaze",
+    "type": ["Fire"],
+    "weaknesses": ["Water", "Ground", "Rock"],
+    "prev_evolution": [{
+      "id": 5,
+      "num": "005",
+      "name": "Charmeleon",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+    }]
+  },{
+    "id": 7,
+    "num": "007",
+    "name": "Squirtle",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+    "height": 0.5,
+    "weight": 9.0,
+    "genders": ["Male", "Female"],
+    "category": "Tiny Turtle",
+    "abilities": "Torrent",
+    "type": ["Water"],
+    "weaknesses": ["Grass", "Electric"],
+    "next_evolution": [{
+      "id": 8,
+      "num": "008",
+      "name": "Wartortle",
+      "image":"https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
+    }]
+  },{
+    "id": 8,
+    "num": "008",
+    "name": "Wartortle",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+    "height": 1.0,
+    "weight": 22.5,
+    "genders": ["Male", "Female"],
+    "category": "Turtle",
+    "abilities": "Torrent",
+    "type": ["Water"],
+    "weaknesses": ["Grass", "Electric"],
+    "prev_evolution": [{
+      "id": 7,
+      "num": "007",
+      "name": "Squirtle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    }],
+    "next_evolution": [{
+      "id": 9,
+      "num": "009",
+      "name": "Blastoise",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
+    }]
+  }, {
+    "id": 9,
+    "num": "009",
+    "name": "Blastoise",
+    "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+    "height": 1.6,
+    "weight": 85.5,
+    "genders": ["Male", "Female"],
+    "category": "Shellfish",
+    "abilities": "Torrent",
+    "type": ["Water"],
+    "weaknesses": ["Grass", "Electric"],
+    "prev_evolution": [{
+      "id": 8,
+      "num": "008",
+      "name": "Wartortle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
+    }]
+  }]
+}
