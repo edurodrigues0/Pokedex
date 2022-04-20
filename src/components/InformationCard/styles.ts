@@ -3,8 +3,8 @@ import { BackgroundProps, colors } from '../../utils/typesCSS';
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 25.4rem;
-  height: 40.4rem;
+  width: 38.4rem;
+  height: 48.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,8 +14,8 @@ export const Container = styled.div`
   border-radius: 1rem;
 `
 export const CardWrapper = styled.div<BackgroundProps>`
-  width: 25rem;
-  height: 40rem;
+  width: 38rem;
+  height: 48rem;
   background: ${(props) => colors[props.activeColor]};
   flex-direction: column;
   border-radius: 1rem;
@@ -128,4 +128,22 @@ export const Block = styled.div`
   width: 10rem;
   height: 10rem;
   margin: 1rem;
+`
+
+export const TypesContainer = styled.div`
+  width: 33rem;
+  height: 13rem;
+  margin: 0 auto;
+`
+
+export const TypesWrapper = styled.div`
+  flex-direction: column;
+
+  h2 {
+    margin: 1rem;
+  }
+`
+
+export const TypeCards = styled.div`
+    
 `

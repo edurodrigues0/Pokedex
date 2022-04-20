@@ -8,9 +8,13 @@ import {
   Evolutions,
   NextEvolutions,
   PokemonImage,
+  TypeCards,
+  TypesContainer,
+  TypesWrapper,
 } from "./styles";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
+import { TypesBox } from "../TypesBox";
 import { usePokemons } from "../../context/usePokemons";
 
 export function InformationCard() {
@@ -37,27 +41,16 @@ export function InformationCard() {
                 </p>
 
                 <p>
-                  Type:{" "}
-                  {pokeCard.type.map((t) => {
-                    return <span> {t}</span>;
-                  })}
-                </p>
-
-                <p>
                   Weight: <span>{pokeCard.weight} kg</span>
                 </p>
               </div>
               <Divider />
               <div>
                 <p>
-                  Gender:{" "}
+                  Gender:
                   {pokeCard.genders.map((gender) => {
                     return <span> {gender === "Male" ? "♂" : "♀"}</span>;
                   })}
-                </p>
-
-                <p>
-                  Category: <span>{pokeCard.category}</span>
                 </p>
 
                 <p>
@@ -65,23 +58,28 @@ export function InformationCard() {
                 </p>
               </div>
               <Divider />
-              <div>
-                <p>
-                  Type:{" "}
-                  {pokeCard.type.map((t) => {
-                    return <span> {t}</span>;
-                  })}
-                </p>
-              </div>
+              <TypesContainer>
+                <TypesWrapper>
+                  <h2>Type</h2>
+                  <TypeCards>
+                    {pokeCard.type.map((t) => {
+                      return(
+                        <TypesBox color={t} type={t} />
+                      )
+                    })}
+                  </TypeCards>
 
-              <div>
-                <p>
-                  Weaknesses:{" "}
-                  {pokeCard.weaknesses.map((w) => {
-                    return <span> {w}</span>;
-                  })}
-                </p>
-              </div>
+                  <h2>Weaknesses</h2>
+
+                  <TypeCards>
+                    {pokeCard.weaknesses.map((w) => {
+                      return(
+                        <TypesBox color={w} type={w} />
+                      )
+                    })}
+                  </TypeCards>
+                </TypesWrapper>
+              </TypesContainer>
               <Divider />
               <Evolutions>
                 {pokeCard.prev_evolution ? (
@@ -92,7 +90,7 @@ export function InformationCard() {
                           <button onClick={() => selectedPokemon(p.id)}>
                             <FiChevronLeft size={30} color="#000" />
                           </button>
-                          
+
                           <div>
                             <img src={p.image} alt={p.name} />
                             <h1>{p.name}</h1>

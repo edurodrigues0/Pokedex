@@ -19,12 +19,19 @@ export const Content = styled.div`
     color: var(--secondary-yellow);
   }
 
-  input {
-    width: 10rem;
+  div {
+    h3 {
+      color: var(--secondary-yellow);
+      margin: 0 0.5rem;
+    }
+    
+    input {
+    width: 18rem;
     padding: 0.5rem;
     border-radius: 0.75rem;
     color: var(--primary-black);
     font-size: 1.2rem;
     border: transparent;
+  }
   }
 `

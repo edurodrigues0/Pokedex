@@ -14,7 +14,7 @@ export const ButtonContainer = styled.div`
 `
 
 export const Button = styled.button<BackgroundProps>`
-  background: #808080;
+  background: #808080 ;
   width: 15rem;
   height: 5rem;
   padding: 0.5rem;
@@ -44,5 +44,9 @@ export const Button = styled.button<BackgroundProps>`
   &:hover {
     height: 5.5rem;
     background-color: #909090;
+  }
+
+  &:active {
+    color: var(--primary-yellow);
   }
 `

@@ -9,12 +9,15 @@ export function Header() {
     <Container>
       <Content>
         <h1>Pokédex</h1>
-        <input
-          id='pokemonSearch'
-          type='text'
-          placeholder='Procurar'
-          onChange={handleSearch}
-        />
+        <div>
+          <h3>Nome ou número</h3>
+          <input
+            id='pokemonSearch'
+            type='text'
+            placeholder='Procurar'
+            onChange={handleSearch}
+          />
+        </div>
       </Content>
     </Container>
   );
